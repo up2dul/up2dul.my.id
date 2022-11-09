@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "yarn lint && yarn format",
+    "lint:fix": "next lint && yarn format",
     "format": "prettier --write './src/**/*.{ts,tsx}' --config ./.prettierrc"
   },
   "dependencies": {
