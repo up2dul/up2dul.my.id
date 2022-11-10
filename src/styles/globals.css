@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * { @apply font-inter text-white; }
+
+  p { @apply font-normal text-lg; }
+
+  h1, h2, h3 { @apply font-semibold; }
+
+  h1 { @apply text-h1; }
+
+  h2 { @apply text-h2; }
+
+  h3 { @apply text-h3; }
+}
+
+@layer utilities {
+  .text-gradient { @apply bg-gradient-to-r from-blue to-purple bg-clip-text text-transparent; }
+}
