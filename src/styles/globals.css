@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  * { @apply font-inter text-white; }
+  body { @apply bg-white transition-colors dark:bg-black; }
+
+  * { @apply text-black dark:text-white; }
 
   p { @apply font-normal text-lg; }
 
@@ -14,6 +16,8 @@
   h2 { @apply text-h2; }
 
   h3 { @apply text-h3; }
+
+  button:focus { @apply outline-none ring-2 ring-blue ring-offset-4 ring-offset-white dark:ring-offset-black; }
 }
 
 @layer utilities {
