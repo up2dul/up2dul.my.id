@@ -17,5 +17,7 @@
 }
 
 @layer utilities {
+  .px-container { @apply px-6 sm:px-20 md:px-40 lg:px-56 xl:px-72; }
+
   .text-gradient { @apply bg-gradient-to-r from-blue to-purple bg-clip-text text-transparent; }
 }
