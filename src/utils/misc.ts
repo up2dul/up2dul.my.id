@@ -1,5 +1,9 @@
+function padTo2Digits(num: number) {
+  return String(num).padStart(2, '0');
+}
+
 const d = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' }));
 
 export function getTime() {
-  return d.getHours() + ':' + d.getMinutes();
+  return padTo2Digits(d.getHours()) + ':' + padTo2Digits(d.getMinutes());
 }
