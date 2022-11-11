@@ -13,7 +13,7 @@ module.exports = {
         'h3': '18px'
       }
     },
-    fontFamily: { inter: ['Inter', 'sans-serif'] },
+    fontFamily: { mona: ['Mona Sans', 'sans-serif'] },
     colors: {
       black: '#161616',
       white: '#F2F2F2',
