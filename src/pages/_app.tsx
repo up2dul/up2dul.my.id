@@ -1,11 +1,12 @@
 import Head from 'next/head';
+import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 
 import '@/styles/globals.css';
 
-const App = ({ Component, pageProps }: AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
+    <ThemeProvider defaultTheme='dark'>
       <Head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
@@ -20,8 +21,8 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 };
 
-export default App;
+export default MyApp;
