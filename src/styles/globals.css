@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('../assets/fonts/Mona-Sans-Regular.woff2') format('woff2 supports variations'),
+    url('../assets/fonts/Mona-Sans-SemiBold.woff2') format('woff2-variations');
+  font-weight: 400 600;
+  font-stretch: 75%;
+}
+
 @layer base {
   body { @apply bg-white transition-colors dark:bg-black; }
 
-  * { @apply text-black dark:text-white; }
+  * { @apply font-mona text-black dark:text-white; }
 
   p { @apply font-normal text-lg; }
 
