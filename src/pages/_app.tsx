@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
+import { ThemeProvider } from 'next-themes';
+import 'tippy.js/dist/tippy.css';
 
 import '@/styles/globals.css';
 
