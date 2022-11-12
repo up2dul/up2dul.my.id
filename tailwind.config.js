@@ -19,7 +19,8 @@ module.exports = {
       white: '#F2F2F2',
       blue: '#6358EE',
       purple: '#965DE9',
-      transparent: colors.transparent
+      sky: colors.sky,
+      transparent: 'transparent'
     }
   },
   plugins: []
