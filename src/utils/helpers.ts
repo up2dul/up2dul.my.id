@@ -4,6 +4,8 @@ function padTo2Digits(num: number) {
 
 const d = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' }));
 
-export function getTime() {
+function getTime() {
   return padTo2Digits(d.getHours()) + ':' + padTo2Digits(d.getMinutes());
 }
+
+export { getTime };
