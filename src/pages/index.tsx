@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Navbar from '@/components/Navbar';
+import { Contacts, Layout } from '@/components';
 
 const Home = () => {
   return (
@@ -9,18 +9,18 @@ const Home = () => {
         <title>up2dul&apos;s site</title>
       </Head>
 
-      <Navbar />
+      <Layout>
+        <h1 className='text-center'>
+          👋 Hi there <br /> I&apos;m <span className='text-gradient'>Abdul malik</span>!
+        </h1>
 
-      <div className='px-container mt-5 flex flex-col items-center justify-center'>
-        <h1 className='text-gradient'>Hello next js</h1>
+        <Contacts />
+
         <p className='text-center'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.{' '}
-          <span className='text-gradient'>Molestias</span> illo obcaecati fugiat quaerat impedit
-          maxime tempora sequi quos. Illum, eos!
+          Love to writing code and exploring about programming technologies, especially Frontend web
+          technologies.
         </p>
-        <h2 className='text-gradient'>Hello next js</h2>
-        <h3 className='text-gradient'>Hello next js</h3>
-      </div>
+      </Layout>
     </>
   );
 };
