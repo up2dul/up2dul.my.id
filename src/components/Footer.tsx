@@ -1,12 +1,23 @@
 const Footer = () => (
-  <footer className='flex flex-col flex-wrap justify-between gap-4 py-6 px-14 text-center sm:flex-row md:px-16 lg:px-20'>
-    <p className='text-sm'>Design & Code with 💙</p>
+  <footer className='py-6 px-14 text-center md:px-16 lg:px-20'>
+    <div className='mb-6 flex justify-between sm:mb-4 md:mb-0'>
+      <p>Design & Code with 💙</p>
+      <p>
+        Source code on{' '}
+        <a
+          href='https://github.com/up2dul/up2dul-website'
+          target={'_blank'}
+          className='text-link cursor-alias'
+          rel='noreferrer'
+        >
+          Github
+        </a>
+      </p>
+    </div>
 
-    <p className='text-sm'>
-      Website repository on <a href='https://github.com/up2dul'>Github</a>
-    </p>
-
-    <p className='text-sm'>© 2022 • Abdul Malik</p>
+    <div className='text-sm'>
+      <p>© 2022 • Abdul Malik</p>
+    </div>
   </footer>
 );
 
