@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <>
       <Navbar />
 
-      <main className='px-container mt-[86px] flex flex-col items-center justify-center gap-7 py-24'>
+      <main className='px-container mt-[97px] flex flex-col items-center justify-center gap-7 py-24 sm:mt-[62px]'>
         {children}
       </main>
 
