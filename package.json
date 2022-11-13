@@ -10,7 +10,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint && yarn format",
-    "format": "prettier --write './src/**/*.{ts,tsx}' --config ./.prettierrc"
+    "format": "prettier --write './src/**/*.{ts,tsx}' --config ./.prettierrc",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@tippyjs/react": "^4.2.6",

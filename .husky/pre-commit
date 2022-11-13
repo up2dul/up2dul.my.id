@@ -1,0 +1,16 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '👨‍🔧 🛠️ Styling your project before committing 🛠️ 👨‍🔧'
+echo 'Please wait, this may take a while...'
+
+# Check ESLint Standards
+yarn lint ||
+(
+  echo '💀 Bruh.. you have a problem with the code, fix it first, and then re-commit 💀'
+  false;
+)
+
+echo '✅ No error found: committing this now.... 🚀🚀'
+
+yarn lint-staged
