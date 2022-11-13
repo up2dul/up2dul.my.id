@@ -10,13 +10,13 @@ const Home = () => {
       </Head>
 
       <Layout>
-        <h1 className='text-center'>
+        <h1>
           👋 Hi there <br /> I&apos;m <span className='text-gradient'>Abdul malik</span>!
         </h1>
 
         <Contacts />
 
-        <p className='text-center'>
+        <p>
           Love to writing code and exploring about programming technologies, especially Frontend web
           technologies.
         </p>
