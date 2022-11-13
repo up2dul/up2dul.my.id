@@ -26,7 +26,7 @@ const Layout = ({ title, description, children }: LayoutProps) => {
       <Navbar />
 
       <main className='flex min-h-screen flex-col justify-between pt-[97px] sm:pt-[62px]'>
-        <section className='px-container gap-7py-14 my-auto flex flex-col items-center justify-center text-center'>
+        <section className='px-container my-auto flex flex-col items-center justify-center gap-7 py-14 text-center'>
           {children}
         </section>
 
