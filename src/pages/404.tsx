@@ -14,7 +14,7 @@ const NotFound = () => (
     </p>
 
     <Link href={'/'} className='text-link'>
-      Back to Home page.
+      Back to Home page
     </Link>
   </Layout>
 );
