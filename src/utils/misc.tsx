@@ -1,40 +1,40 @@
 import { FiFacebook, FiFileText, FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
 
 type ContactList = {
-  name: string;
+  title: string;
   url: string;
   icon: React.ReactNode;
 };
 
 const contactList: ContactList[] = [
   {
-    name: 'email',
+    title: 'Email',
     url: '#',
     icon: <FiMail />
   },
   {
-    name: 'github',
+    title: 'Github',
     url: 'https://github.com/up2dul',
     icon: <FiGithub />
   },
   {
-    name: 'linkedin',
+    title: 'Linkedin',
     url: 'https://linkedin.com/in/abdulmalikk',
     icon: <FiLinkedin />
   },
   {
-    name: 'facebook',
+    title: 'Facebook',
     url: 'https://facebook.com/up2dul',
     icon: <FiFacebook />
   },
   {
-    name: 'instagram',
+    title: 'Instagram',
     url: 'https://instagram.com/unrspgt',
     icon: <FiInstagram />
   },
   {
-    name: 'cv',
-    url: '#',
+    title: 'My resume',
+    url: 'https://drive.google.com/file/d/1OXdGnIF0wOT-jGBItMJ5QKpYQgFfatkI/view?usp=sharing',
     icon: <FiFileText />
   }
 ];
