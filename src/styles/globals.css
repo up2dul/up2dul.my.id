@@ -9,15 +9,13 @@
     url('../assets/fonts/Mona-Sans-SemiBold.woff2') format('woff2-variations');
   font-weight: 400 600;
   font-display: swap;
-  font-stretch: 75%;
+  font-stretch: 75% 125%;
 }
 
 @layer base {
   body { @apply bg-white font-mona text-black transition-colors dark:bg-black dark:text-white; }
 
-  p { @apply font-normal text-lg selection:bg-sky-400 selection:text-black; }
-
-  h1, h2, h3 { @apply font-semibold selection:bg-sky-400 selection:text-black; }
+  p { @apply font-normal text-base selection:bg-sky-400 selection:text-black; }
 
   h1 { @apply text-h1; }
 
@@ -25,7 +23,14 @@
 
   h3 { @apply text-h3; }
 
-  button:focus, a:focus { @apply outline-none ring-2 ring-blue ring-offset-4 ring-offset-white dark:ring-offset-black; }
+  h1,
+  h2,
+  h3 { @apply font-semibold selection:bg-sky-400 selection:text-black; }
+
+  a { @apply selection:bg-sky-400 selection:text-black; }
+
+  button:focus,
+  a:focus { @apply outline-none ring-2 ring-blue ring-offset-4 ring-offset-white dark:ring-offset-black; }
 
   footer p { @apply text-sm; }
 }
