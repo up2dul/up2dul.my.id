@@ -1,12 +1,4 @@
-import {
-  FiFacebook,
-  FiFileText,
-  FiGithub,
-  FiInstagram,
-  FiLinkedin,
-  FiMail,
-  FiSend
-} from 'react-icons/fi';
+import { FiFacebook, FiFileText, FiGithub, FiLinkedin, FiMail, FiSend } from 'react-icons/fi';
 
 import type { ContactList, NavLinkList } from '@/types';
 
