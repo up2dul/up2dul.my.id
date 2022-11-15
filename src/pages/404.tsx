@@ -5,7 +5,7 @@ import { Layout } from '@/components';
 const NotFound = () => (
   <Layout title='404 Page not found'>
     <h1 className='text-4xl sm:text-h1'>
-      🧐 <span className='text-gradient'>404</span> - Looks like you&apos;re lost.
+      🧐 <span className='text-gradient'>404</span> - Looks like you&apos;re lost
     </h1>
 
     <p>
