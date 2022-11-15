@@ -2,21 +2,17 @@ import { contactList } from '@/utils/misc';
 import Tooltip from './Tooltip';
 
 const Contacts = () => (
-  <div className='flex gap-8 text-2xl'>
+  <div className='flex justify-center gap-6 text-2xl sm:gap-8'>
     {contactList.map(({ title, url, icon }) => (
       <Tooltip key={title} content={title}>
-        {title === 'Email' ? (
-          <button className='cursor-pointer p-1 hover:text-primary'>{icon}</button>
-        ) : (
-          <a
-            href={url}
-            className='cursor-alias p-1 hover:text-primary'
-            target={'_blank'}
-            rel='noreferrer'
-          >
-            {icon}
-          </a>
-        )}
+        <a
+          href={url}
+          className='cursor-alias p-1 hover:text-primary'
+          target={'_blank'}
+          rel='noreferrer'
+        >
+          {icon}
+        </a>
       </Tooltip>
     ))}
   </div>
