@@ -13,24 +13,24 @@
 }
 
 @layer base {
-  body { @apply bg-white font-mona text-black transition-colors dark:bg-black dark:text-white; }
+  body { @apply bg-light font-mona text-dark transition-colors dark:bg-dark dark:text-light; }
 
-  p { @apply font-normal text-base selection:bg-sky-400 selection:text-black; }
+  p { @apply text-base font-normal text-gray selection:bg-tertiary selection:text-dark dark:text-cloud; }
 
   h1 { @apply text-h1; }
 
-  h2 { @apply text-h2; }
+  h2 { @apply text-2xl; }
 
-  h3 { @apply text-h3; }
+  h3 { @apply text-lg; }
 
   h1,
   h2,
-  h3 { @apply font-semibold selection:bg-sky-400 selection:text-black; }
+  h3 { @apply font-semibold selection:bg-tertiary selection:text-dark; }
 
-  a { @apply selection:bg-sky-400 selection:text-black; }
+  a { @apply selection:bg-tertiary selection:text-dark; }
 
   button:focus,
-  a:focus { @apply outline-none ring-2 ring-blue ring-offset-4 ring-offset-white dark:ring-offset-black; }
+  a:focus { @apply outline-none ring-2 ring-secondary ring-offset-4 ring-offset-light dark:ring-offset-dark; }
 
   footer p { @apply text-sm; }
 }
@@ -38,7 +38,7 @@
 @layer utilities {
   .px-container { @apply px-8 sm:px-20 md:px-40 lg:px-56 xl:px-72; }
 
-  .text-gradient { @apply bg-gradient-to-r from-blue to-purple bg-clip-text text-transparent; }
+  .text-gradient { @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent; }
 
-  .text-link { @apply text-blue decoration-2 underline-offset-2 hover:underline; }
+  .text-link { @apply text-primary decoration-2 underline-offset-2 hover:underline dark:text-tertiary; }
 }
