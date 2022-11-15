@@ -9,31 +9,28 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-const Layout = ({ title, description, children }: LayoutProps) => {
-  const metaTitle = title ? title + ' | ' + "up2dul's site" : "up2dul's site";
-  const metaDescription =
-    description ||
-    'My personal website, a website where I showcase some my projects, contacts, etc.';
+const Layout = ({
+  title = 'Home',
+  description = 'My personal website, a website where I showcase some my projects, contacts, etc.',
+  children
+}: LayoutProps) => (
+  <>
+    <Head>
+      <meta name='title' content={title + ` | up2dul's site`} />
+      <meta name='description' content={description} />
+      <title>{title + ` | up2dul's site`}</title>
+    </Head>
 
-  return (
-    <>
-      <Head>
-        <meta name='title' content={metaTitle} />
-        <meta name='description' content={metaDescription} />
-        <title>{metaTitle}</title>
-      </Head>
+    <Navbar />
 
-      <Navbar />
+    <main className='flex min-h-screen flex-col justify-between pt-[97px] sm:pt-[62px]'>
+      <section className='px-container my-auto flex flex-col items-center justify-center gap-7 py-14 text-center'>
+        {children}
+      </section>
 
-      <main className='flex min-h-screen flex-col justify-between pt-[97px] sm:pt-[62px]'>
-        <section className='px-container my-auto flex flex-col items-center justify-center gap-7 py-14 text-center'>
-          {children}
-        </section>
-
-        <Footer />
-      </main>
-    </>
-  );
-};
+      <Footer />
+    </main>
+  </>
+);
 
 export default Layout;
