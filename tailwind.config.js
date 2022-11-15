@@ -1,15 +1,10 @@
-/* eslint @typescript-eslint/no-var-requires: "off" */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: ['class', '[data-theme="dark"]'],
   theme: {
     extend: {
-      fontSize: {
-        'h1': '40px',
-        'h2': '24px',
-        'h3': '18px'
-      }
+      fontSize: { 'h1': '40px' }
     },
     fontFamily: { mona: ['Mona Sans', 'sans-serif'] },
     colors: {
