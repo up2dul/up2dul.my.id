@@ -1,10 +1,6 @@
 import { FiFacebook, FiFileText, FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
 
-type ContactList = {
-  title: string;
-  url: string;
-  icon: React.ReactNode;
-};
+import type { ContactList, NavLinkList } from '@/types';
 
 const contactList: ContactList[] = [
   {
@@ -39,4 +35,37 @@ const contactList: ContactList[] = [
   }
 ];
 
-export { contactList };
+const navLinkList: NavLinkList[] = [
+  {
+    href: '/',
+    title: 'Home',
+    isActive: true
+  },
+  {
+    href: '/blog',
+    title: 'Blog',
+    isActive: false
+  },
+  {
+    href: '/projects',
+    title: 'Projects',
+    isActive: false
+  },
+  {
+    href: '/about',
+    title: 'About me',
+    isActive: false
+  },
+  {
+    href: '/about-site',
+    title: 'About site',
+    isActive: false
+  },
+  {
+    href: '/my-uses',
+    title: 'Uses',
+    isActive: false
+  }
+];
+
+export { contactList, navLinkList };
