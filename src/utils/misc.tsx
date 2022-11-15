@@ -1,32 +1,40 @@
-import { FiFacebook, FiFileText, FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
+import {
+  FiFacebook,
+  FiFileText,
+  FiGithub,
+  FiInstagram,
+  FiLinkedin,
+  FiMail,
+  FiSend
+} from 'react-icons/fi';
 
 import type { ContactList, NavLinkList } from '@/types';
 
 const contactList: ContactList[] = [
   {
-    title: 'Email',
-    url: '#',
+    title: 'Email <malik301002@gmail.com>',
+    url: 'mailto:malik301002@gmail.com',
     icon: <FiMail />
   },
   {
-    title: 'Github',
+    title: 'GitHub',
     url: 'https://github.com/up2dul',
     icon: <FiGithub />
   },
   {
-    title: 'Linkedin',
+    title: 'LinkedIn',
     url: 'https://linkedin.com/in/abdulmalikk',
     icon: <FiLinkedin />
+  },
+  {
+    title: 'Telegram',
+    url: 'https://t.me/up2dul',
+    icon: <FiSend />
   },
   {
     title: 'Facebook',
     url: 'https://facebook.com/up2dul',
     icon: <FiFacebook />
-  },
-  {
-    title: 'Instagram',
-    url: 'https://instagram.com/unrspgt',
-    icon: <FiInstagram />
   },
   {
     title: 'My resume',
@@ -39,7 +47,7 @@ const navLinkList: NavLinkList[] = [
   {
     href: '/',
     title: 'Home',
-    isActive: true
+    isActive: false
   },
   {
     href: '/blog',
@@ -59,11 +67,6 @@ const navLinkList: NavLinkList[] = [
   {
     href: '/about-site',
     title: 'About site',
-    isActive: false
-  },
-  {
-    href: '/my-uses',
-    title: 'Uses',
     isActive: false
   }
 ];
