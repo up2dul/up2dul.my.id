@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='px-container fixed top-0 flex w-full flex-col items-center justify-between gap-4 py-3 backdrop-blur-md dark:bg-black/10 sm:flex-row sm:py-4'>
+      <nav className='px-container fixed top-0 flex w-full flex-col items-center justify-between gap-4 py-3 backdrop-blur-md dark:bg-dark/10 sm:flex-row sm:py-4'>
         <h3>{currentTime} (UTC +07:00)</h3>
 
         <div className='flex w-full items-center justify-evenly gap-14 text-3xl sm:w-auto'>

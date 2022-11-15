@@ -6,7 +6,7 @@ type TooltipProps = {
 };
 
 const Tooltip = ({ content, children }: TooltipProps) => (
-  <Tippy placement='bottom' delay={200} content={<span className='text-white'>{content}</span>}>
+  <Tippy placement='bottom' delay={200} content={<span className='text-light'>{content}</span>}>
     {children}
   </Tippy>
 );

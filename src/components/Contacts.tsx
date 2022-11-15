@@ -6,11 +6,11 @@ const Contacts = () => (
     {contactList.map(({ title, url, icon }) => (
       <Tooltip key={title} content={title}>
         {title === 'Email' ? (
-          <button className='cursor-pointer p-1 hover:text-purple'>{icon}</button>
+          <button className='cursor-pointer p-1 hover:text-primary'>{icon}</button>
         ) : (
           <a
             href={url}
-            className='cursor-alias p-1 hover:text-purple'
+            className='cursor-alias p-1 hover:text-primary'
             target={'_blank'}
             rel='noreferrer'
           >
