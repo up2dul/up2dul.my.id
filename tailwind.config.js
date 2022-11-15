@@ -1,7 +1,5 @@
 /* eslint @typescript-eslint/no-var-requires: "off" */
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors');
-
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: ['class', '[data-theme="dark"]'],
@@ -15,11 +13,13 @@ module.exports = {
     },
     fontFamily: { mona: ['Mona Sans', 'sans-serif'] },
     colors: {
-      black: '#161616',
-      white: '#F2F2F2',
-      blue: '#6358EE',
-      purple: '#965DE9',
-      sky: colors.sky,
+      dark: '#161616',
+      light: '#F2F2F2',
+      primary: '#007FFE',
+      secondary: '#3099FE',
+      tertiary: '#60B2FE',
+      gray: '#1F2937',
+      cloud: '#D4D4D4',
       transparent: 'transparent'
     }
   },
