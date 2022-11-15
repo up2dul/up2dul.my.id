@@ -29,8 +29,8 @@
 
   a { @apply selection:bg-tertiary selection:text-dark; }
 
-  button:focus,
-  a:focus { @apply outline-none ring-2 ring-secondary ring-offset-4 ring-offset-light dark:ring-offset-dark; }
+  a:focus,
+  button:focus { @apply outline-4 outline-double outline-offset-2 outline-secondary; }
 
   footer p { @apply text-sm; }
 }
