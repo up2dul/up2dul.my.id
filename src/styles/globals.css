@@ -36,9 +36,19 @@
 }
 
 @layer utilities {
+  .skip-content { @apply absolute -top-10 left-10 z-20 -translate-y-12 transform transition-transform duration-200 focus:top-8 focus:translate-y-3; }
+
   .px-container { @apply px-8 sm:px-20 md:px-40 lg:px-56 xl:px-72; }
+
+  .navbar { @apply px-container fixed top-0 z-10 flex w-full flex-col items-center justify-between gap-4 py-3 backdrop-blur-md dark:bg-dark/10 sm:flex-row sm:py-4; }
 
   .text-gradient { @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent; }
 
   .text-link { @apply text-primary decoration-2 underline-offset-2 hover:underline dark:text-tertiary; }
+
+  .card { @apply hover:scale-[1.02] rounded-sm bg-gradient-to-br from-primary to-secondary p-1 transition; }
+
+  .card:hover h2 { @apply text-primary underline decoration-2 underline-offset-2 dark:text-tertiary; }
+
+  .tag { @apply bg-primary py-0.5 px-2 text-sm font-semibold text-dark dark:text-dark; }
 }
