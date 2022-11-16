@@ -9,7 +9,7 @@ const NavMenu = ({ onCloseClick }: { onCloseClick: () => void }) => {
   const { pathname } = useRouter();
 
   return (
-    <aside className='fixed top-0 z-10 flex h-screen w-full items-center justify-center backdrop-blur-md'>
+    <aside className='fixed top-0 z-40 flex h-screen w-full items-center justify-center backdrop-blur-md'>
       <Tooltip content='Close'>
         <button
           className='absolute right-6 top-8 text-5xl sm:right-20 md:right-40 lg:right-56 xl:right-72'
