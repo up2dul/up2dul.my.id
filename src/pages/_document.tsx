@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 const Document = () => (
-  <Html lang='en'>
+  <Html lang='en' className='scroll-smooth'>
     <Head>
       <meta name='msapplication-TileColor' content='#965de9' />
       <meta name='theme-color' content='#f2f2f2' />
