@@ -21,10 +21,14 @@ const Layout = ({
       <title>{title + ` | up2dul's site`}</title>
     </Head>
 
+    <a href={'#main-content'} className='skip-content'>
+      Skip to content
+    </a>
+
     <Navbar />
 
     <main className='flex min-h-screen flex-col justify-between pt-[97px] sm:pt-[62px]'>
-      <section className='px-container my-auto flex flex-col items-center justify-center gap-7 py-14 text-center'>
+      <section id='main-content' className='px-container my-auto py-14 text-center'>
         {children}
       </section>
 
