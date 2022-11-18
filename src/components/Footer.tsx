@@ -3,7 +3,7 @@ const Footer = () => (
     <div className='mb-6 flex justify-between sm:mb-4 md:mb-0'>
       <p>Design & Code with 💙</p>
       <p>
-        Source code on{' '}
+        Code on{' '}
         <a
           href='https://github.com/up2dul/up2dul-website'
           target={'_blank'}

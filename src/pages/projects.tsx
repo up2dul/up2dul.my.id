@@ -6,13 +6,13 @@ import type { Page } from '@/types/notion';
 
 const Projects = ({ projects }: { projects: Page[] }) => {
   return (
-    <Layout title='Projects' description='Some of my projects showcase'>
+    <Layout title='Projects' description='Some of my featured projects'>
       <h1>
         🎨 My <span className='text-gradient'>projects</span>
       </h1>
 
       <p className='mt-5 text-base'>
-        Some of my latest projects, currently there is only website project.
+        Some of my featured projects, currently there is only website project.
       </p>
 
       <div className='mt-14 grid w-full grid-cols-1 gap-12 lg:grid-cols-2'>
