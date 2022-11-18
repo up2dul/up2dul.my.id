@@ -1,6 +1,10 @@
-import { Layout, Card } from '@/components';
+import { Client } from '@notionhq/client';
+import type { GetStaticProps } from 'next';
 
-const Projects = () => {
+import { Layout, Card } from '@/components';
+import type { Page } from '@/types/notion';
+
+const Projects = ({ projects }: { projects: Page[] }) => {
   return (
     <Layout title='Projects' description='Some of my projects showcase'>
       <h1>
@@ -12,30 +16,40 @@ const Projects = () => {
       </p>
 
       <div className='mt-14 grid w-full grid-cols-1 gap-12 lg:grid-cols-2'>
-        <Card
-          href='#'
-          order={1}
-          title='Bookshelf'
-          description='Manage your reading list and your wishlist books'
-          technologies={['Next js', 'Mantine UI', 'Typescript', 'Framer motion']}
-        />
-        <Card
-          href='#'
-          order={2}
-          title='ToDo list'
-          description='An app for your productivity, notes your activity'
-          technologies={['Vite', 'Tailwindcss', 'Jotai']}
-        />
-        <Card
-          href='#'
-          order={3}
-          title='ToDo list'
-          description='An app for your productivity'
-          technologies={['Vite', 'Tailwindcss', 'Jotai']}
-        />
+        {projects.map(({ id, properties }, idx) => (
+          <Card
+            key={id}
+            href='#'
+            order={idx + 1}
+            title={properties?.title?.title[0]?.plain_text}
+            description={properties?.short_description?.rich_text[0]?.text?.content}
+            technologies={properties?.tags?.multi_select?.map((tag) => tag.name)}
+          />
+        ))}
       </div>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const notion = new Client({ auth: process.env.NOTION_API_KEY });
+  const databaseId: string = process.env.NOTION_DB_ID as string;
+
+  const { results } = await notion.databases.query({
+    database_id: databaseId,
+    sorts: [
+      {
+        property: 'order',
+        direction: 'descending'
+      }
+    ]
+  });
+
+  return {
+    props: {
+      projects: results
+    }
+  };
 };
 
 export default Projects;
