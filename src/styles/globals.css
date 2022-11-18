@@ -50,5 +50,5 @@
 
   .card:hover h2 { @apply text-primary underline decoration-2 underline-offset-2 dark:text-tertiary; }
 
-  .tag { @apply bg-primary py-0.5 px-2 text-sm font-semibold text-dark dark:text-dark; }
+  .tag { @apply bg-tertiary py-0.5 px-2 text-sm font-semibold text-dark dark:text-dark; }
 }
