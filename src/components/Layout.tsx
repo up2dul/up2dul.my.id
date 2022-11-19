@@ -21,7 +21,7 @@ const Layout = ({
       <title>{title + ` | up2dul's site`}</title>
     </Head>
 
-    <a href={'#main-content'} className='skip-content'>
+    <a href='#main-content' className='skip-content'>
       Skip to content
     </a>
 

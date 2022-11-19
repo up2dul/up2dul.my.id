@@ -13,7 +13,7 @@ const NotFound = () => (
       spelled something wrong. Can you double check that URL?
     </p>
 
-    <Link href={'/'} className='text-link'>
+    <Link href='/' className='text-link'>
       Back to Home page
     </Link>
   </Layout>
