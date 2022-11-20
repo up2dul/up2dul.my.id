@@ -5,7 +5,7 @@ const Footer = () => (
       <p>
         Code on{' '}
         <a
-          href='https://github.com/up2dul/up2dul-website'
+          href='https://github.com/up2dul/up2dul.my.id'
           target={'_blank'}
           className='text-link cursor-alias'
           rel='noreferrer'
