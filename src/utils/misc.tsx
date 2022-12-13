@@ -30,7 +30,7 @@ const contactList: ContactList[] = [
   },
   {
     title: 'My resume',
-    url: 'https://drive.google.com/file/d/1OXdGnIF0wOT-jGBItMJ5QKpYQgFfatkI/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/1656fAebP8o_onv5S-s5Calm0KbdxE1Mb/view?usp=sharing',
     icon: <FiFileText />
   }
 ];
