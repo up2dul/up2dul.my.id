@@ -8,7 +8,7 @@ const NotFound = () => (
       🧐 <span className='text-gradient'>404</span> - Looks like you&apos;re lost
     </h1>
 
-    <p>
+    <p className='my-5'>
       Maybe this page used to exist or you just spelled something wrong. I&apos;m guessing you
       spelled something wrong. Can you double check that URL?
     </p>
