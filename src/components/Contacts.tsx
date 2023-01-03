@@ -3,15 +3,15 @@ import Tooltip from './Tooltip';
 
 const Contacts = () => (
   <div className='flex justify-center gap-6 text-2xl sm:gap-8'>
-    {contactList.map(({ title, url, icon }) => (
-      <Tooltip key={title} content={title}>
+    {contactList.map((contact) => (
+      <Tooltip key={contact.title} content={contact.title}>
         <a
-          href={url}
+          href={contact.url}
           className='cursor-alias p-1 hover:text-primary'
           target={'_blank'}
           rel='noreferrer'
         >
-          {icon}
+          {<contact.icon />}
         </a>
       </Tooltip>
     ))}

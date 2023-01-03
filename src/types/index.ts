@@ -1,7 +1,9 @@
+import type { IconType } from 'react-icons';
+
 type ContactList = {
   title: string;
   url: string;
-  icon: React.ReactNode;
+  icon: IconType;
 };
 
 type NavLinkList = {
