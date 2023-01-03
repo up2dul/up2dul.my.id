@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 type CardProps = {
   href: string;
-  order: number;
+  order: string;
   title: string;
   description: string;
   technologies: string[];
@@ -12,7 +12,7 @@ const Card = ({ href, order, title, description, technologies }: CardProps) => (
   <Link href={href} className='card'>
     <article className='flex h-full flex-col justify-between gap-5 rounded-sm bg-light p-6 text-left dark:bg-dark'>
       <div className='flex items-start gap-2'>
-        <p>0{order}</p>
+        <p>{order}</p>
         <h2>{title}</h2>
       </div>
 

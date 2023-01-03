@@ -20,7 +20,7 @@ const Projects = ({ projects }: { projects: Page[] }) => {
           <Card
             key={id}
             href='#'
-            order={idx + 1}
+            order={'0' + (idx + 1)}
             title={properties?.title?.title[0]?.plain_text}
             description={properties?.short_description?.rich_text[0]?.text?.content}
             technologies={properties?.tags?.multi_select?.map((tag) => tag.name)}
@@ -40,15 +40,16 @@ export const getStaticProps: GetStaticProps = async () => {
     sorts: [
       {
         property: 'order',
-        direction: 'descending'
-      }
-    ]
+        direction: 'descending',
+      },
+    ],
   });
 
   return {
     props: {
-      projects: results
-    }
+      projects: results,
+    },
+    revalidate: 20,
   };
 };
 
