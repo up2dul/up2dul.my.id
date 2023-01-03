@@ -19,7 +19,7 @@ const Projects = ({ projects }: { projects: Page[] }) => {
         {projects.map(({ id, properties }, idx) => (
           <Card
             key={id}
-            href='#'
+            href={`/projects/detail/${id}`}
             order={'0' + (idx + 1)}
             title={properties?.title?.title[0]?.plain_text}
             description={properties?.short_description?.rich_text[0]?.text?.content}
