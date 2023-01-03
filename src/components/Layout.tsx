@@ -12,7 +12,7 @@ type LayoutProps = {
 const Layout = ({
   title = 'Home',
   description = 'My personal website, a website where I showcase some my projects, contacts, etc.',
-  children
+  children,
 }: LayoutProps) => (
   <>
     <Head>
