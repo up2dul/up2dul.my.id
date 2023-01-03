@@ -33,7 +33,7 @@ const NavMenu = ({ onCloseClick }: { onCloseClick: () => void }) => {
         </ul>
       </div>
 
-      <div className='absolute bottom-8 flex items-center gap-2'>
+      <div className='absolute bottom-8 hidden items-center gap-2 md:flex'>
         <FiAlertCircle />
         <p>You can use esc to close this</p>
       </div>
