@@ -5,8 +5,8 @@ const Footer = () => (
       <p>
         Code on{' '}
         <a
-          href='https://github.com/up2dul/up2dul.my.id'
-          target={'_blank'}
+          href='https://github.com/up2dul/up2dul.com'
+          target='_blank'
           className='text-link cursor-alias'
           rel='noreferrer'
         >
@@ -15,9 +15,7 @@ const Footer = () => (
       </p>
     </div>
 
-    <div className='text-sm'>
-      <p>⚠️ This site is still under development</p>
-    </div>
+    <p>⚠️ This site is still under development</p>
   </footer>
 );
 
