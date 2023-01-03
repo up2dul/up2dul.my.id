@@ -13,7 +13,9 @@
 }
 
 @layer base {
-  body { @apply bg-light font-mona text-dark transition-colors dark:bg-dark dark:text-light; }
+  html { @apply font-mona scroll-smooth; }
+
+  body { @apply bg-light text-dark transition-colors dark:bg-dark dark:text-light; }
 
   p { @apply text-base font-normal text-gray selection:bg-tertiary selection:text-dark dark:text-cloud; }
 
