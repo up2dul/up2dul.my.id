@@ -6,13 +6,13 @@ import type { NavLinkList as NavLinkProps } from '@/types';
 const NavLink = ({ href, title, isActive }: NavLinkProps) => (
   <li
     className={clsx(
-      'text-h1',
+      'text-3xl',
       isActive
         ? 'text-secondary'
-        : 'decoration-secondary decoration-4 underline-offset-4 hover:text-secondary hover:underline'
+        : 'decoration-secondary decoration-4 underline-offset-4 hover:text-secondary hover:underline',
     )}
   >
-    {isActive ? <h1>{title}</h1> : <Link href={href}>{title}</Link>}
+    {isActive ? title : <Link href={href}>{title}</Link>}
   </li>
 );
 

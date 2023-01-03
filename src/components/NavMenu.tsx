@@ -25,11 +25,13 @@ const NavMenu = ({ onCloseClick }: { onCloseClick: () => void }) => {
         </button>
       </Tooltip>
 
-      <ul className='text-center'>
-        {navLinkList.map(({ title, href }) => (
-          <NavLink key={href} href={href} title={title} isActive={href === pathname} />
-        ))}
-      </ul>
+      <div className='rounded-md bg-gradient-to-br from-primary to-secondary p-1'>
+        <ul className='flex flex-col gap-4 rounded-md bg-light py-4 px-8 dark:bg-dark'>
+          {navLinkList.map(({ title, href }) => (
+            <NavLink key={href} href={href} title={title} isActive={href === pathname} />
+          ))}
+        </ul>
+      </div>
 
       <div className='absolute bottom-8 flex items-center gap-2'>
         <FiAlertCircle />
