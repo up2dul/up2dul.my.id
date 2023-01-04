@@ -4,8 +4,8 @@ import type { ContactList, NavLinkList } from '@/types';
 
 const contactList: ContactList[] = [
   {
-    title: 'Email <malik301002@gmail.com>',
-    url: 'mailto:malik301002@gmail.com',
+    title: 'Email <up2dul@gmail.com>',
+    url: 'mailto:up2dul@gmail.com',
     icon: FiMail,
   },
   {
