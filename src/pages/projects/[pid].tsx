@@ -15,7 +15,12 @@ const ProjectDetail = ({ projectDetail: { cover, properties } }: { projectDetail
 
     <div className='mt-6 mb-14 flex flex-col items-center gap-5'>
       <div className='bg-gradient-to-br from-primary to-secondary p-1'>
-        <Image src={cover?.file.url} alt='Project screenshot' width={440} height={220} />
+        <Image
+          src={cover?.file.url}
+          alt={properties.title.title[0].plain_text}
+          width={440}
+          height={220}
+        />
       </div>
 
       <ul className='flex flex-wrap justify-center gap-5'>
