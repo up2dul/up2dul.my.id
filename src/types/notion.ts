@@ -9,6 +9,7 @@ type TitleProperties = {
 
 // Tags
 type Tags = {
+  id: string;
   name: string;
 };
 
@@ -46,9 +47,17 @@ interface PageProperties {
   new_things: TextProperties;
 }
 
+// Cover properties
+interface CoverProperties {
+  file: {
+    url: string;
+  };
+}
+
 // Page
 interface Page {
   id: string;
+  cover: CoverProperties;
   properties: PageProperties;
 }
 
