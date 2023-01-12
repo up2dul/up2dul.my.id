@@ -42,7 +42,7 @@ const About = () => (
       </p>
     </div>
 
-    <div className='mb-14 text-left'>
+    <div className='text-left'>
       <h2>
         💡 Fun <span className='text-gradient'>facts</span>
       </h2>
