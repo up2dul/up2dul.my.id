@@ -52,7 +52,7 @@ const navLinkList: NavLinkList[] = [
     isActive: false,
   },
   {
-    href: '/about',
+    href: '/me',
     title: 'About me',
     isActive: false,
   },
